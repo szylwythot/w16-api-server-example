@@ -12,7 +12,7 @@ const app = express();
 dbConection();
 
 //cors needed
-app.use(cors());
+app.use(cors()); // cross frame origin
 
 //request payload middleware
 app.use(express.json());
